@@ -1,8 +1,14 @@
 import React from 'react';
+import netlifyIdentity from 'netlify-identity-widget';
+
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  netlifyIdentity.init({});
+
+  netlifyIdentity.open();
+
   return (
     <div className="App">
       <header className="App-header">
